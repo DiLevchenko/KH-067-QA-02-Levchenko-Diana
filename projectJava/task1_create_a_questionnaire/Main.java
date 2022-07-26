@@ -5,11 +5,11 @@ public class Println {
 
         Scanner scName = new Scanner(System.in);
         System.out.println("What is your name?");
-        String Name = scName.nextLine();
+        String name = scName.nextLine();
 
         Scanner scAddress = new Scanner(System.in);
         System.out.println("Where are you live, " + Name + "?");
-        String Address = scAddress.nextLine();
+        String address = scAddress.nextLine();
 
         System.out.println("Total information about user:");
         System.out.println("Name of user - " + Name);
