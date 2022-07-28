@@ -8,11 +8,11 @@ public class Println {
         String name = scName.nextLine();
 
         Scanner scAddress = new Scanner(System.in);
-        System.out.println("Where are you live, " + Name + "?");
+        System.out.println("Where are you live, " + name + "?");
         String address = scAddress.nextLine();
 
         System.out.println("Total information about user:");
-        System.out.println("Name of user - " + Name);
-        System.out.println("Address of user - " + Address);
+        System.out.println("Name of user - " + name);
+        System.out.println("Address of user - " + address);
     }
 }
