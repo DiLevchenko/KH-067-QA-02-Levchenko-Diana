@@ -55,7 +55,6 @@ public class CalculatorDL {
             } catch (Exception e) {
                 e.printStackTrace(System.out);
                 System.out.println("Incorrect input value(number required).");
-                break;
             }
         } while (input.next().charAt(0) != 'c');
         input.close();
