@@ -3,32 +3,32 @@ import java.util.Scanner;
 public class CalculatorDL {
     static void executeCalculation(double num1, double num2, char operator) {
         double result;
-        final char add = '+';
-        final char sub = '-';
-        final char mul = '*';
-        final char div = '/';
-        final char mod = '%';
+        final char ADD = '+';
+        final char SUB = '-';
+        final char MUL = '*';
+        final char DIV = '/';
+        final char MOD = '%';
 
         switch (operator) {
-            case add:
+            case ADD:
                 result = num1 + num2;
-                System.out.printf("%.2f %c %.2f = %.2f%n", num1, add, num2, result);
+                System.out.printf("%.2f %c %.2f = %.2f%n", num1, ADD, num2, result);
                 break;
-            case sub:
+            case SUB:
                 result = num1 - num2;
-                System.out.printf("%.2f %c %.2f = %.2f%n", num1, sub, num2, result);
+                System.out.printf("%.2f %c %.2f = %.2f%n", num1, SUB, num2, result);
                 break;
-            case mul:
+            case MUL:
                 result = num1 * num2;
-                System.out.printf("%.2f %c %.2f = %.2f%n", num1, mul, num2, result);
+                System.out.printf("%.2f %c %.2f = %.2f%n", num1, MUL, num2, result);
                 break;
-            case div:
+            case DIV:
                 result = num1 / num2;
-                System.out.printf("%.2f %c %.2f = %.2f%n", num1, div, num2, result);
+                System.out.printf("%.2f %c %.2f = %.2f%n", num1, DIV, num2, result);
                 break;
-            case mod:
+            case MOD:
                 result = num1 % num2;
-                System.out.printf("%.2f %c %.2f = %.2f%n", num1, mod, num2, result);
+                System.out.printf("%.2f %c %.2f = %.2f%n", num1, MOD, num2, result);
                 break;
             default:
                 System.out.println("Invalid operator!");
@@ -53,7 +53,7 @@ public class CalculatorDL {
 
                 System.out.println("To do new calculation enter anything but \'c\'.");
             } catch (Exception e) {
-                System.out.println(e);
+                e.printStackTrace(System.out);
                 System.out.println("Incorrect input value(number required).");
                 break;
             }
@@ -61,5 +61,3 @@ public class CalculatorDL {
         input.close();
     }
 }
-
-
